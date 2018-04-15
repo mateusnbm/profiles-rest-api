@@ -20,3 +20,6 @@ pip freeze
 pip freeze > requirements.txt
 
 python manage.py runserver 0.0.0.0:8080
+
+python manage.py makemigrations
+python manage.py migrate
