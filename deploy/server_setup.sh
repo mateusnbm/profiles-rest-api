@@ -14,7 +14,8 @@ apt-get update
 apt-get install -y python3-dev sqlite python-pip supervisor nginx git
 
 # Upgrade pip to the latest version.
-pip install --upgrade pip
+#pip install --upgrade pip
+pip install pip==9.0.3
 pip install virtualenv
 
 mkdir -p $PROJECT_BASE_PATH
