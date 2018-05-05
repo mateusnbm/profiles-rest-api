@@ -14,7 +14,10 @@ apt-get update
 apt-get install -y python3-dev sqlite python-pip supervisor nginx git
 
 # Upgrade pip to the latest version.
-#pip install --upgrade pip
+#
+# The latest version of pip (10.0.1) has an import bug. Downgrade temporarily.
+# pip install --upgrade pip
+#
 pip install pip==9.0.3
 pip install virtualenv
 
